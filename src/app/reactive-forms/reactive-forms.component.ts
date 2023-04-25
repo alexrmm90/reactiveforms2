@@ -1,20 +1,16 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormControl, FormGroup } from "@angular/forms";
+import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 @Component({
   selector: 'app-reactive-forms',
   templateUrl: './reactive-forms.component.html',
-  styleUrls: ['./reactive-forms.component.scss']
+  styleUrls: ['./reactive-forms.component.scss'],
 })
 export class ReactiveFormsComponent implements OnInit {
- public cadastroForm : FormGroup  = this.formBuilder.group({
-  firstName : [{}]
- })
+  public cadastroForm: FormGroup = this.formBuilder.group({
+    firstName: [{}],
+  });
 
-  constructor(private formBuilder: FormBuilder ) { }
+  constructor(private formBuilder: FormBuilder) {}
 
-  ngOnInit(): void {
-
-
-  }
-
+  ngOnInit(): void {}
 }
